@@ -354,7 +354,7 @@ elif part1 == "Résultats attendus":
                 filtered_data = filtered_data[filtered_data['Station'] == selected_station]
 
             st.dataframe(filtered_data)
-            st.download_button("📥 Télécharger les données filtrées", filtered_data.to_csv(index=False), "donnees_filtrees.csv")
+            st.download_button("📥 Télécharger les données filtrées", filtered_data.to_csv(index=False), "donnees_filtrees.csv", key="download_tab4")
 
             st.markdown("""
             **Interprétation :**
